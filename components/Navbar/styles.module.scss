@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.listContainer {
+	@include flex-container(row, center, center);
+	list-style-type: none;
+	font-family: "Inter", sans-serif;
+
+	// targetting all elements in .listContainer
+	& > * {
+		padding-inline: 1rem;
+	}
+
+	
+}

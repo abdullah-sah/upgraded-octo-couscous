@@ -1,6 +1,17 @@
 @import '../../styles/variables.scss';
 
-.logo {
-	@include flex-container(row, flex-start, center);
-	padding-inline: $logoPaddingInline;
+
+.container {
+	@include flex-container(row, center, center);
+
+	.logo {
+		@include flex-container(row, flex-start, center);
+		padding-inline: $logoPaddingInline;
+	}
+
+	.navbar {
+		width: 100%;
+	}
 }
+
+

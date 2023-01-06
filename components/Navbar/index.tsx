@@ -8,10 +8,10 @@ interface IProps {}
 
 const Navbar: NextPage<IProps> = () => {
 	return (
-		<div className={styles.container}>
-			<nav>
-				<ul>
-					<Link href="/browse">
+		<>
+			<nav className={styles.nav}>
+				<ul className={styles.listContainer}>
+					<Link href="/home">
 						<li>Home</li>
 					</Link>
 					<Link href="/">
@@ -27,9 +27,8 @@ const Navbar: NextPage<IProps> = () => {
 						<li>My List</li>
 					</Link>
 				</ul>
-				<RegisterBar />
 			</nav>
-		</div>
+		</>
 	);
 };
 

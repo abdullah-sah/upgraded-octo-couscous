@@ -1,0 +1,23 @@
+// importing Inter font for the logo
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.logo {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 77px;
+
+	background: linear-gradient(180deg, #DB0000 0%, rgba(0, 0, 0, 0.43) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.alignSelf {
+	align-self: center;
+}
+
+.justifySelf {
+	justify-self: center;
+}

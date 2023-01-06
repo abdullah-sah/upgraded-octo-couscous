@@ -1,0 +1,49 @@
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// .main {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 6rem;
+//   min-height: 100vh;
+// }
+
+.main {
+  @include flex-container(column, flex-start, center);
+  font-family: 'Inter';
+  background-color: #454545;
+  min-height: 100vh;
+
+
+  .container {
+    @include flex-container(column, flex-start, center);
+    min-height: 100vh;
+    
+    .header {
+      // mixin defined in './variables.scss'
+      @include flex-container(row, space-between, center);
+      padding-inline: 1.6rem;
+      margin-bottom: 100px;
+
+    }
+    
+    .content {
+      min-height: 30vh;
+      padding: 4rem;
+
+      h1 {
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+
+  }
+}
+

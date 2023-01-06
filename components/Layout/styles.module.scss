@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.container {
+	@include flex-container(column, flex-start, center);
+}
+
+.childrenContainer {
+	@include flex-container(column, flex-start, center);
+}
+
+.horizontalCenter {
+	justify-self: center;
+}
+
+.verticalCenter {
+	align-self: center;
+}
+
+.fullWidth {
+	width: 100%;	
+}
+
+.grow {
+	flex-grow: 1;
+}

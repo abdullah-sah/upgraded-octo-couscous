@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+
+.container {
+	@include flex-container(row, flex-end, center);
+	width: $signInBtnWidth;
+	height: $signInBtnHeight;
+
+	.button {
+		padding: 10px;
+		text-align: center;
+	
+		background-color: $primaryBtnBg;
+		color: $primaryBtnColor;
+		font-weight: 700;
+		font-size: 16px;
+
+		cursor: pointer;
+	}
+}

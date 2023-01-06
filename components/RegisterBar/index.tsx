@@ -6,11 +6,11 @@ import Link from "next/link";
 
 interface IProps {}
 
-const Search: NextPage<IProps> = () => {
+const RegisterBar: NextPage<IProps> = () => {
 	return (
 		<div className={styles.container}>
 			<input type="text" className={styles.input} />
-			<Link href="/homepage" className={styles.btnContainer}>
+			<Link href="/home" className={styles.btnContainer}>
 				<p className={styles.btn}>GET STARTED</p>
 				<Image
 					src={arrowRightIcon}
@@ -23,4 +23,4 @@ const Search: NextPage<IProps> = () => {
 	);
 };
 
-export default Search;
+export default RegisterBar;

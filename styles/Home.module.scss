@@ -13,7 +13,7 @@
 .main {
   @include flex-container(column, flex-start, center);
   font-family: 'Inter';
-  background-color: #454545;
+  background-color: $primaryBg;
   min-height: 100vh;
 
 
@@ -24,7 +24,7 @@
     .header {
       // mixin defined in './variables.scss'
       @include flex-container(row, space-between, center);
-      padding-inline: 1.6rem;
+      padding-inline: $logoPaddingInline;
       margin-bottom: 100px;
 
     }

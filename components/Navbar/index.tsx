@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextPage } from "next";
 import styles from "./styles.module.scss";
-import Search from "../Search";
+import RegisterBar from "../RegisterBar";
 
 interface IProps {}
 
@@ -12,18 +12,22 @@ const Navbar: NextPage<IProps> = () => {
 			<nav>
 				<ul>
 					<Link href="/browse">
-						<li>Browse</li>
+						<li>Home</li>
 					</Link>
 					<Link href="/">
-						<li>Hmmmmm</li>
+						<li>TV Shows</li>
 					</Link>
 					<Link href="/">
-						<li>Let's see</li>
+						<li>Movies</li>
+					</Link>
+					<Link href="/">
+						<li>Latest</li>
+					</Link>
+					<Link href="/">
+						<li>My List</li>
 					</Link>
 				</ul>
-
-				<Link href="/">DvD</Link>
-				<Search />
+				<RegisterBar />
 			</nav>
 		</div>
 	);

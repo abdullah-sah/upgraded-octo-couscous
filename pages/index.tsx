@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.scss";
 import Logo from "../components/Logo";
 import SignInButton from "../components/SignInButton";
 import Layout from "../components/Layout";
-import Search from "../components/Search";
+import RegisterBar from "../components/RegisterBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +33,7 @@ export default function Home() {
 						</p>
 					</div>
 
-					<Search />
+					<RegisterBar />
 				</Layout>
 			</div>
 		</main>

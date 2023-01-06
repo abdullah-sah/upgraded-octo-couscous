@@ -8,7 +8,7 @@ const SignInButton: FunctionComponent<ISignInButtonProps> = () => {
 	return (
 		<>
 			<div className={styles.container}>
-				<Link href="/homepage">
+				<Link href="/home">
 					<p className={styles.button}>Sign In</p>
 				</Link>
 			</div>

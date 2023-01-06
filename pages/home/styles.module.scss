@@ -1,0 +1,6 @@
+@import '../../styles/variables.scss';
+
+.logo {
+	@include flex-container(row, flex-start, center);
+	padding-inline: $logoPaddingInline;
+}

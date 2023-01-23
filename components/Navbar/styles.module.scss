@@ -9,7 +9,7 @@
 	// targetting all elements in .listContainer
 	& > * {
 		padding-inline: 1rem;
-		// flex-shrink: 0;
+		min-width: 127px;
 	}
 
 	

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+@mixin action-button($backgroundColor) {
+	width: 100px;
+	height: 40px;
+	background: $backgroundColor;
+	cursor: pointer;
+}
+
+.playButtonContainer {
+	@include flex-container(row, center, center);
+	@include action-button($primaryBtnBg);
+}
+
+.addItemButtonContainer {
+	@include flex-container(row, center, center);
+	@include action-button(#000);
+}

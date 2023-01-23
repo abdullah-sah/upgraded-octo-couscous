@@ -28,8 +28,6 @@ const Layout: NextPage<IProps> = ({
 	if (verticalCenter) childrenClasses += " " + styles.verticalCenter;
 	if (grow) childrenClasses += " " + styles.grow;
 
-	console.log(childrenClasses);
-
 	return (
 		<div className={styles.container}>
 			<Head>

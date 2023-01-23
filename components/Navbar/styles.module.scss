@@ -4,10 +4,12 @@
 	@include flex-container(row, center, center);
 	list-style-type: none;
 	font-family: "Inter", sans-serif;
+	font-size: 20px;
 
 	// targetting all elements in .listContainer
 	& > * {
 		padding-inline: 1rem;
+		// flex-shrink: 0;
 	}
 
 	

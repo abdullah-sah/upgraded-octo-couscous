@@ -1,17 +1,66 @@
 @import '../../styles/variables.scss';
 
 
-.container {
-	@include flex-container(row, center, center);
+.mainContainer {
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("../../public/netflix-landing-page-bg.jpeg");
 
-	.logo {
-		@include flex-container(row, flex-start, center);
-		padding-inline: $logoPaddingInline;
+	&::after {
+		position: absolute;
+		top: 0;
+		z-index: 0;
+		content: "";
+		width: 100vw;
+		height: 100vh;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(90deg, rgba(0, 0, 0, 1) 28%, rgba(0, 0, 0, 0) 100%);
+
 	}
 
-	.navbar {
-		width: 100%;
+	.container {
+		@include flex-container(row, center, center);
+		position: relative; // getting rid of position: static;
+		z-index: 2;
+
+		.logo {
+			@include flex-container(row, flex-start, center);
+			padding-inline: $logoPaddingInline;
+		}
+
+		.navbar {
+			width: 100%;
+			flex-grow: 1;
+		}
+	}
+
+	.mainContent {
+		@include flex-container(column, space-evenly, flex-start);
+		max-width: 600px;
+		// color: black;
+		// background: white;
+		padding-block: 8rem;
+		margin-left: 10rem;
+		position: relative;
+		z-index: 2;
+		
+		:where(.imageText, .contentInfo) {
+			margin-top: 20px;
+		}
+
+		.actionButtonsContainer {
+			@include flex-container(row, flex-start, center);
+			padding-block: 1.2rem;
+			column-gap: 30px;
+		}
+
+		.watchContentContainer {
+			@include flex-container(row, flex-start, center);
+			padding-top: 6rem;
+			text-transform: uppercase;
+			font-size: 15px;
+			font-weight: 900;
+			letter-spacing: 2px;
+		}
 	}
 }
-
-

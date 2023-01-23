@@ -47,6 +47,17 @@
 		:where(.imageText, .contentInfo) {
 			margin-top: 20px;
 		}
+		
+		.imageText {
+			color: rgba(179, 179, 179, 0.9);
+			text-transform: capitalize;
+
+			.ageRating {
+				background: $primaryBtnBg;
+				color: white;
+				padding-inline: 3px;
+			}
+		}
 
 		.actionButtonsContainer {
 			@include flex-container(row, flex-start, center);

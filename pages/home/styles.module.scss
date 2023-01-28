@@ -7,7 +7,7 @@
 	background-image: url("../../public/netflix-landing-page-bg.jpeg");
 
 	&::after {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		z-index: 0;
 		content: "";

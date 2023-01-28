@@ -33,8 +33,8 @@ const HomePage: NextPage<IHomePageProps> = ({ props }) => {
 					height={160}
 				/>
 				<p className={styles.imageText}>
-					2003 | <span className={styles.ageRating}>16+</span> | 2hr30min | action
-					drama
+					2003 | <span className={styles.ageRating}>16+</span> | 2hr30min |
+					action drama
 				</p>
 				<p className={styles.contentInfo}>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum

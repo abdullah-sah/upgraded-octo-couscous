@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/fonts/Inter/static/Inter-Medium.ttf');
+}
 
 * {
   box-sizing: border-box;
